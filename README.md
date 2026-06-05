@@ -28,6 +28,8 @@ source .venv/bin/activate      # Mac/Linux
 pip install -r requirements.txt
 ```
 
+> **Note:** This project currently needs `numpy<2` because the embedded Torch / SentenceTransformers stack is not compatible with NumPy 2.x in this environment.
+
 > **Note:** `sentence-transformers` will download the embedding model (~80MB) on first run. This only happens once — it's cached locally afterward.
 
 ### 4. Add your Groq API key
